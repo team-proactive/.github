@@ -1,0 +1,9 @@
+blank_issues_enabled: false  # 빈 이슈 생성 비활성화
+
+issue_types:
+  - name: 버그 보고  
+    description: "버그를 보고하는 템플릿입니다." 
+    body: ISSUE_TEMPLATE/bug_report.md 
+  - name: 기능 요청
+    description: "새로운 기능을 요청하는 템플릿입니다."  
+    body: ISSUE_TEMPLATE/feature_request.md  
