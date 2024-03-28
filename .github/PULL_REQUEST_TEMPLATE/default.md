@@ -1,8 +1,8 @@
 ---
-name: 버그 보고
-about: 버그 보고를 위한 템플릿입니다.
-title: "[버그] "
-labels: 버그
+name: 풀 리퀘스트
+about: 풀 리퀘스트를 위한 템플릿입니다.
+title: "[PR] "
+labels: PR
 assignees: ''
 ---
 

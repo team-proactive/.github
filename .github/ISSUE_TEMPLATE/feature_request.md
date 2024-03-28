@@ -1,8 +1,8 @@
 ---
 name: 기능 요청
 about: 새로운 기능을 요청하는 템플릿입니다.
-title: "[버그] "
-labels: 버그
+title: "[기능] "
+labels: 기능
 assignees: ''
 ----
 
