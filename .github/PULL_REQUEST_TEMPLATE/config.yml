@@ -1,6 +1,0 @@
-blank_issues_enabled: false  # 빈 이슈 생성 비활성화
-
-issue_types:
-  - name: 풀 리퀘스트
-    description: "풀 리퀘스트 생 템플릿입니다." 
-    body: default.md 
