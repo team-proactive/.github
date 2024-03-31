@@ -1,9 +1,10 @@
 ---
 name: 버그 보고
 about: 버그 보고를 위한 템플릿입니다.
-title: "[버그] "
-labels: 버그
-assignees: ''
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
 ---
 
 ## 이슈 유형

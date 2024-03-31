@@ -1,10 +1,11 @@
 ---
 name: 기능 요청
 about: 새로운 기능을 요청하는 템플릿입니다.
-title: "[기능] "
-labels: 기능
-assignees: ''
-----
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - octocat
+---
 
 ## 이슈 유형
 - [ ] 🐛 버그 리포트

@@ -1,9 +1,28 @@
-blank_issues_enabled: false  # 빈 이슈 생성 비활성화
-
 issue_types:
-  - name: 버그 보고  
-    description: "버그를 보고하는 템플릿입니다." 
-    body: bug_report.md 
+  - name: 버그 보고
+    description: "버그를 보고하는 템플릿입니다."
+    body:
+      - type: textarea
+        id: bug-description
+        attributes:
+          label: 버그 설명
+          description: 버그에 대해 자세히 설명해주세요.
+        validations:
+          required: true
+      - type: input
+        id: bug-reproduction
+        attributes:
+          label: 재현 방법
+          description: 버그를 재현하는 방법을 설명해주세요.
+        validations:
+          required: true
   - name: 기능 요청
-    description: "새로운 기능을 요청하는 템플릿입니다."  
-    body: feature_request.md  
+    description: "새로운 기능을 요청하는 템플릿입니다."
+    body:
+      - type: textarea
+        id: feature-description
+        attributes:
+          label: 기능 설명
+          description: 요청하는 기능에 대해 자세히 설명해주세요.
+        validations:
+          required: true
