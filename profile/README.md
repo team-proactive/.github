@@ -82,6 +82,25 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
   - Docker를 사용하여 애플리케이션을 컨테이너화하고 배포합니다.
   - Kubernetes를 활용하여 컨테이너 오케스트레이션 및 스케일링을 관리합니다.
 
+## 데이터베이스 모델링(ER Diagram)
+![alt text](erd.png)
+- AbstractBaseUser 테이블 : 사용자 인증을 위한 기본 필드를 제공하는 추상 모델입니다.
+- PermissionsMixin 테이블 : 사용자 권한 관련 필드를 제공하는 믹스인 클래스입니다. AbstractUser 모델에서 해당 믹스인을 사용하여 권한 관련 기능을 추가합니다.
+- AbstractUser 테이블 : User 모델의 기반이 되는 추상 사용자 모델입니다. AbstractBaseUser와 PermissionsMixin을 상속받아 구현되었습니다.
+- User 테이블 : Django의 기본 User 모델입니다. 사용자 정보를 저장하는 역할을 합니다. AbstractUser를 상속받아 구현되었습니다.
+- CustomUser 테이블 : User 모델을 상속받아 확장한 커스텀 사용자 모델입니다. User 모델의 필드를 포함하면서 추가적인 필드(bio, profile_name 등)를 가지고 있습니다.
+- Group 테이블 : 사용자 그룹 정보를 저장하는 테이블입니다. User 테이블과 다대다 관계를 가지고 있습니다.
+- Permission 테이블 : 권한 정보를 저장하는 테이블입니다. ContentType 테이블과 외래 키 관계를 가지고 있습니다.
+- ContentType 테이블 : Django의 ContentType 프레임워크에서 사용되는 테이블입니다. 모델 클래스를 식별하기 위한 정보를 저장합니다. 
+                      Permission 테이블과 LogEntry 테이블에서 외래 키로 사용됩니다.
+- Content 테이블 : 컨텐츠 정보를 저장하는 테이블입니다. User 테이블과 ContentType 테이블과 외래 키 관계를 가지고 있습니다.
+- LogEntry 테이블 : Django의 Admin 로그 정보를 저장하는 테이블입니다. User 테이블과 ContentType 테이블과 외래 키 관계를 가지고 있습니다.
+- AbstractBaseSession 테이블 : Session 모델의 기반이 되는 추상 세션 모델입니다. Session 모델에서 공통적으로 사용되는 필드를 정의합니다.
+- Session 테이블 : 사용자의 세션 정보를 저장하는 테이블입니다. AbstractBaseSession을 상속받아 구현되었습니다.
+- OutstandingToken 테이블 : Django REST framework의 토큰 인증 방식에서 사용되는 테이블입니다. User 테이블과 외래 키 관계를 가지고 있습니다.
+- BlacklistedToken 테이블 : 블랙리스트에 등록된 토큰 정보를 저장하는 테이블입니다. OutstandingToken 테이블과 외래 키 관계를 가지고 있습니다.
+- Site 테이블 : Django의 Site 프레임워크에서 사용되는 테이블입니다. 웹사이트의 도메인과 이름을 저장합니다.
+
 ## 진행 상황
 
 저희 팀은 현재까지 다음과 같은 작업을 진행했습니다:
