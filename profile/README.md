@@ -170,6 +170,96 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
    1. utils_status: 다양한 상태값을 정의하고 저장하는 테이블입니다. is_active 필드는 상태값이 활성화되어 있는지 여부를 나타냅니다.
    2. utils_tag: 태그 정보를 저장하는 테이블입니다. name 필드는 태그 이름을 나타냅니다.
 
+## 프로젝트 폴더 구조
+```
+📦safe-eye
+┣ 📦accounts
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜forms.py
+┃ ┣ 📜models.py
+┃ ┣ 📜permissions.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦alarm
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦chat
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦config
+┃ ┣ 📜asgi.py
+┃ ┣ 📜debug.log
+┃ ┣ 📜schema.py
+┃ ┣ 📜settings.py
+┃ ┣ 📜urls.py
+┃ ┗ 📜wsgi.py
+┣ 📦media
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜schema.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📦notice
+┃ ┣ 📂fixtures
+┃ ┃ ┣ 📜initial_data.json
+┃ ┃ ┗ 📜mock_data_gen.py
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜models.py
+┃ ┣ 📜schema.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┗ 📜views.py
+┣ 📦utils
+┃ ┣ 📂fixtures
+┃ ┃ ┗ 📜initial_data.json
+┃ ┣ 📜admin.py
+┃ ┣ 📜apps.py
+┃ ┣ 📜mixins.py
+┃ ┣ 📜models.py
+┃ ┣ 📜serializers.py
+┃ ┣ 📜tests.py
+┃ ┣ 📜urls.py
+┃ ┣ 📜views.py
+┃ ┗ 📜__init__.py
+┣ 📜.env
+┣ 📜.env.example
+┣ 📜.gitignore
+┣ 📜a-team.png
+┣ 📜commands.sh
+┣ 📜db.sqlite3
+┣ 📜manage.py
+┣ 📜README.md
+┗ 📜requirements.txt
+```
+
 
 ## 7. API 명세서
 [Swagger](localhost:8000)  
