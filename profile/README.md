@@ -117,39 +117,40 @@ Safe Eye 프로젝트는 다음과 같은 주요 기능을 제공할 예정입�
 
 Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발되고 있습니다:
 
-- 백엔드: Django, DRF Pillow 등
+개발환경 및 협업<br>
+<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 
-  - Django와 Django REST Framework를 사용하여 백엔드 API를 구축하고 있습니다.
-  - Pillow를 활용하여 이미지 처리 및 변환을 수행합니다.
+프론트엔드<br>
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/nextdotjs-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+<img src="https://img.shields.io/badge/reactquery-007ACC?style=for-the-badge&logo=reactquery&logoColor=white">
 
-- 프론트엔드: Next.js
+백엔드<br>
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">  <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+<img src="https://img.shields.io/badge/restframework-C5F74F?style=for-the-badge&logo=restframework&logoColor=white">
+<img src="https://img.shields.io/badge/Graphene-EA4C89?style=for-the-badge&logo=Graphene&logoColor=white">
 
-  - React 기반의 Next.js 프레임워크를 사용하여 사용자 친화적인 인터페이스를 개발하고 있습니다.
-  - 서버 사이드 렌더링과 서스펜스, 프리패칭 등을 이용하여 효과적으로 빠른 개발을 하며, seo를 신경 씁니다..
+배포<br>
+<img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">  <img src="https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white">
+<img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
+<img src="https://img.shields.io/badge/gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white">
 
-- 머신러닝: TensorFlow, PyTorch(예상)
+기타 라이브러리 <br>
+데이터 처리 및 분석<br>
+<img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+<img src="https://img.shields.io/badge/scipy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white">
+<img src="https://img.shields.io/badge/scikit-image-372213?style=for-the-badge&logo=scikit-image&logoColor=white">
 
-  - TensorFlow와 PyTorch를 활용하여 AI 모델을 학습하고 배포합니다.
-  - LSTM과 MIL Ranking 모델을 사용하여 이상 행동을 인식합니다.
 
-- 컴퓨터 비전: OpenCV
-
-  - OpenCV 라이브러리를 사용하여 영상 처리 및 분석을 수행합니다.
-  - 객체 인식, 추적, 분할 등의 기능을 활용합니다.
-
-- 데이터베이스: PostgreSQL
-
-  - PostgreSQL을 사용하여 데이터를 저장하고 관리합니다.
-  - 확장성과 안정성을 고려하여 선택했습니다.
-
-- 실시간 처리: Apache Kafka(예상)
-
-  - Apache Kafka를 활용하여 실시간 데이터 스트리밍 및 처리를 수행합니다.
-  - 대용량 데이터를 빠르게 처리하고 시스템 간 데이터 전달을 원활하게 합니다.
-
-- DevOps: Docker, Kubernetes
-  - Docker를 사용하여 애플리케이션을 컨테이너화하고 배포합니다.
-  - Kubernetes를 활용하여 컨테이너 오케스트레이션 및 스케일링을 관리합니다.
+컴퓨터 비전 및 이미지 처리<br>
+<img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">  <img src="https://img.shields.io/badge/anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white">
+<img src="https://img.shields.io/badge/CUDA-4285F4?style=for-the-badge&logo=CUDA&logoColor=white">
+<img src="https://img.shields.io/badge/slowfastModel-E60000?style=for-the-badge&logo=slowfastModel&logoColor=white">
 
 ## 데이터베이스 모델링(ER Diagram)
 ![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
