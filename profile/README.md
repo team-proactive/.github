@@ -83,7 +83,7 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
   - Kubernetes를 활용하여 컨테이너 오케스트레이션 및 스케일링을 관리합니다.
 
 ## 데이터베이스 모델링(ER Diagram)
-![alt text](erd.png)
+![alt text](/img/erd_from_sqlite.png)
 - AbstractBaseUser 테이블 : 사용자 인증을 위한 기본 필드를 제공하는 추상 모델입니다.
 - PermissionsMixin 테이블 : 사용자 권한 관련 필드를 제공하는 믹스인 클래스입니다. AbstractUser 모델에서 해당 믹스인을 사용하여 권한 관련 기능을 추가합니다.
 - AbstractUser 테이블 : User 모델의 기반이 되는 추상 사용자 모델입니다. AbstractBaseUser와 PermissionsMixin을 상속받아 구현되었습니다.
