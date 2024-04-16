@@ -153,22 +153,22 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 
 ## 데이터베이스 모델링(ER Diagram)
 ![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
-- AbstractBaseUser 테이블 : 사용자 인증을 위한 기본 필드를 제공하는 추상 모델입니다.
-- PermissionsMixin 테이블 : 사용자 권한 관련 필드를 제공하는 믹스인 클래스입니다. AbstractUser 모델에서 해당 믹스인을 사용하여 권한 관련 기능을 추가합니다.
-- AbstractUser 테이블 : User 모델의 기반이 되는 추상 사용자 모델입니다. AbstractBaseUser와 PermissionsMixin을 상속받아 구현되었습니다.
-- User 테이블 : Django의 기본 User 모델입니다. 사용자 정보를 저장하는 역할을 합니다. AbstractUser를 상속받아 구현되었습니다.
-- CustomUser 테이블 : User 모델을 상속받아 확장한 커스텀 사용자 모델입니다. User 모델의 필드를 포함하면서 추가적인 필드(bio, profile_name 등)를 가지고 있습니다.
-- Group 테이블 : 사용자 그룹 정보를 저장하는 테이블입니다. User 테이블과 다대다 관계를 가지고 있습니다.
-- Permission 테이블 : 권한 정보를 저장하는 테이블입니다. ContentType 테이블과 외래 키 관계를 가지고 있습니다.
-- ContentType 테이블 : Django의 ContentType 프레임워크에서 사용되는 테이블입니다. 모델 클래스를 식별하기 위한 정보를 저장합니다. 
-                      Permission 테이블과 LogEntry 테이블에서 외래 키로 사용됩니다.
-- Content 테이블 : 컨텐츠 정보를 저장하는 테이블입니다. User 테이블과 ContentType 테이블과 외래 키 관계를 가지고 있습니다.
-- LogEntry 테이블 : Django의 Admin 로그 정보를 저장하는 테이블입니다. User 테이블과 ContentType 테이블과 외래 키 관계를 가지고 있습니다.
-- AbstractBaseSession 테이블 : Session 모델의 기반이 되는 추상 세션 모델입니다. Session 모델에서 공통적으로 사용되는 필드를 정의합니다.
-- Session 테이블 : 사용자의 세션 정보를 저장하는 테이블입니다. AbstractBaseSession을 상속받아 구현되었습니다.
-- OutstandingToken 테이블 : Django REST framework의 토큰 인증 방식에서 사용되는 테이블입니다. User 테이블과 외래 키 관계를 가지고 있습니다.
-- BlacklistedToken 테이블 : 블랙리스트에 등록된 토큰 정보를 저장하는 테이블입니다. OutstandingToken 테이블과 외래 키 관계를 가지고 있습니다.
-- Site 테이블 : Django의 Site 프레임워크에서 사용되는 테이블입니다. 웹사이트의 도메인과 이름을 저장합니다.
+- 커스텀 사용자 관련 테이블
+   1. accounts_customuser : 커스텀 사용자 모델을 저장하는 테이블입니다. user_id 필드는 auth_user 테이블의 id를 참조합니다.
+   2. accounts_customuser_user_permissions : 커스텀 사용자와 권한 간의 다대다 관계를 저장하는 테이블입니다. customuser_id 필드는 accounts_customuser 테이블의 id를 참조하고, permission_id 필드는 auth_permission 테이블의 id를 참조합니다.
+   3. accounts_customuser_groups : 커스텀 사용자와 그룹 간의 다대다 관계를 저장하는 테이블입니다. customuser_id 필드는 accounts_customuser 테이블의 id를, group_id 필드는 auth_group 테이블의 id를 참조합니다.
+- 토큰 관련 테이블
+   1. accounts_usertoken : 사용자의 토큰을 저장하는 테이블입니다. user_id 필드는 auth_user 테이블의 id를 참조하고, token, blacklist_outstandingtoken, blacklist_blacklistedtoken 필드는 토큰 관련 정보를 나타냅니다.
+- 채팅 관련 테이블
+   1. chat_chatroom : 채팅방 정보를 저장하는 테이블입니다. name 필드는 채팅방의 이름을 나타냅니다.
+   2. chat_message : 채팅 메시지 정보를 저장하는 테이블입니다. content 필드는 메시지 내용을, timestamp 필드는 메시지 전송 시간을 나타냅니다. room_id 필드는 chat_chatroom 테이블의 id를 참조하고, sender_id 필드는 메시지를 보낸 사용자의 id를 참조합니다.
+- 알림 관련 테이블
+   1. alarm_alarm : 알림 정보를 저장하는 테이블입니다. alarm_id 필드는 알림의 id를 나타내고, content 필드는 알림 내용을 저장합니다. created_at 필드는 알림이 생성된 시간을 나타냅니다.
+   2. alarm_alarmsettings : 사용자별 알림 설정 정보를 저장하는 테이블입니다. user_id 필드는 auth_user 테이블의 id를 참조하고, alarm_id 필드는 alarm_alarm 테이블의 id를 참조합니다.
+   3. alarm_alarmtype : 알림 유형 정보를 저장하는 테이블입니다. code 필드는 알림 유형의 코드를 나타내고, name 필드는 알림 유형의 이름을 나타냅니다.
+- 유틸 관련 테이블
+   1. utils_status: 다양한 상태값을 정의하고 저장하는 테이블입니다. is_active 필드는 상태값이 활성화되어 있는지 여부를 나타냅니다.
+   2. utils_tag: 태그 정보를 저장하는 테이블입니다. name 필드는 태그 이름을 나타냅니다.
 
 
 ## 7. API 명세서
