@@ -106,7 +106,7 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 
 
 
-## 주요 기능
+## 주요 기능^
 
 Safe Eye 프로젝트는 다음과 같은 주요 기능을 제공할 예정입니다:
 
@@ -144,8 +144,9 @@ Safe Eye 프로젝트는 다음과 같은 주요 기능을 제공할 예정입�
 
 
 ## 와이어프레임
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWoaSR0gNr7CKk2c2UcJxz9%2F%25EC%2599%2580%25EC%259D%25B4%25EC%2596%25B4%25ED%2594%2584%25EB%25A0%2588%25EC%259E%2584%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DyZqiMjXRok0nrD2K-1" allowfullscreen></iframe>
+[피그마 디자인](https://www.figma.com/file/WoaSR0gNr7CKk2c2UcJxz9/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?type=design&node-id=0%3A1&mode=design&t=yZqiMjXRok0nrD2K-1)
 
+![image](https://github.com/team-proactive/.github/assets/89088205/9c084f29-04e8-4996-a798-2a9f65c88d63)
 
 ## 데이터베이스 모델링(ER Diagram)
 ![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
