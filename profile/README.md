@@ -71,7 +71,7 @@ Safe-Eye는 PySlowFast 모델과 Django 웹 프레임워크를 활용한 비디�
 
 | 이혜림(팀장) | 이규성 | 전지용 | 정진영 | 박경민 |
 | :---: | :---: | :---: | :---: | :---: |
-| <img src="../assets/profile/혜림.jpg" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="../assets/profile/규성.jpg" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="../assets/profile/지용.bmp" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="../assets/profile/진영.jpg" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="../assets/profile/경민.png" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> |
+| <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2F7baaf7f18e1c4f2a951cd0d7f1543f37" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Feccac9ef755b40f3b864649e853f0aef" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fef610161c92e42148bc9d5fe85e92951" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fc24db93543b64f16b3234738fbfdcb4d" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2F84a7b4f5853a4f50a31e655aa3d5ab7c" style="display: block; margin: 0 auto; width: 200px; height: 200px; object-fit: cover;"> |
 | <a href="https://github.com/matty255"> 🌱 HY. Lee | <a href="https://github.com/rkawkclzls"> 🌱 rkawkclzls | <a href="https://github.com/mkdirlife"> 🌱 mkdirlife | <a href="https://github.com/najasinis"> 🌱 najasinis | <a href="https://github.com/Masterdual"> 🌱 Masterdual |
 | 프로젝트의 아키텍처를 설계하고, 기획 단계에서 요구사항을 명확히 정의하며, 프론트엔드 개발을 담당 했습니다. | AI 모델의 출력값(이미지)을 저장하고 관리하는 미디어 앱을 작성하여 분석 결과를 효과적으로 활용할 수 있도록 했습니다. | utils 앱 개발을 담당하고 있습니다. 다른 애플리케이션에서 공통적으로 사용할 수 있는 기능을 제공했습니다. | accounts 앱 및 chat 앱 개발을 담당하고 있으며, 모델링을 분담하고 있습니다. 더불어 사용자 인증과 관련된 기능들(정보 관리, 권한 부여 등), 채팅방 생성 기능, 실시간 채팅 기능들을 구현했습니다. | alarm 앱 개발을 담당했습니다. 적절한 경고 메시지를 커스텀하고, DB에 저장할 수 있도록 했습니다. |
 
@@ -152,7 +152,7 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
   - Kubernetes를 활용하여 컨테이너 오케스트레이션 및 스케일링을 관리합니다.
 
 ## 데이터베이스 모델링(ER Diagram)
-![alt text](../assets/erd/erd_from_sqlite.png)
+![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
 - AbstractBaseUser 테이블 : 사용자 인증을 위한 기본 필드를 제공하는 추상 모델입니다.
 - PermissionsMixin 테이블 : 사용자 권한 관련 필드를 제공하는 믹스인 클래스입니다. AbstractUser 모델에서 해당 믹스인을 사용하여 권한 관련 기능을 추가합니다.
 - AbstractUser 테이블 : User 모델의 기반이 되는 추상 사용자 모델입니다. AbstractBaseUser와 PermissionsMixin을 상속받아 구현되었습니다.
