@@ -170,6 +170,86 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 - BlacklistedToken 테이블 : 블랙리스트에 등록된 토큰 정보를 저장하는 테이블입니다. OutstandingToken 테이블과 외래 키 관계를 가지고 있습니다.
 - Site 테이블 : Django의 Site 프레임워크에서 사용되는 테이블입니다. 웹사이트의 도메인과 이름을 저장합니다.
 
+
+## 7. API 명세서
+[Swagger](localhost:8000)  
+|app: accounts|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|Admin 권한|
+|:-|:-|:-|:-:|:-:|:-:|
+|'login/'|POST|유저 로그인|||
+|'logout/'|POST|유저 로그아웃|✅||
+|'register-admin/'|POST|관리자 계정 생성|||✅|
+|'register/'|POST|일반 사용자 계정 생성|||
+|'user/'|GET|현재 로그인한 사용자 정보 조회|✅||
+|'users/'|GET|전체 사용자 목록 조회|||✅|
+|'<int:pk>/'|GET|특정 사용자 정보 조회|||✅|
+|'<int:pk>/'|PUT|특정 사용자 정보 수정||✅|✅|
+|'<int:pk>/'|PATCH|특정 사용자 정보 부분 수정||✅|✅|
+|'<int:pk>/'|DELETE|특정 사용자 삭제|||✅|
+|'<int:pk>/delete/'|DELETE|특정 사용자 삭제|||✅|
+|'<int:pk>/tokens/generate/'|POST|특정 사용자 토큰 생성|||✅|
+<br>
+
+|app: alarm|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|Admin 권한|
+|:-|:-|:-|:-:|:-:|:-:|
+|'alarms/'|GET|전체 알람 목록 조회|✅||
+|'alarms/'|POST|새로운 알람 생성|✅||
+|'alarms/<int:pk>/'|GET|특정 알람 조회|✅||
+|'alarms/<int:pk>/'|PUT|특정 알람 수정|✅|✅|
+|'alarms/<int:pk>/'|PATCH|특정 알람 부분 수정|✅|✅|
+|'alarms/<int:pk>/'|DELETE|특정 알람 삭제|✅|✅|
+|'risks/'|GET|전체 위험 목록 조회|✅||
+|'risks/'|POST|새로운 위험 생성|✅||
+|'risks/<int:pk>/'|GET|특정 위험 조회|✅||
+|'risks/<int:pk>/'|PUT|특정 위험 수정|✅|✅|
+|'risks/<int:pk>/'|PATCH|특정 위험 부분 수정|✅|✅|
+|'risks/<int:pk>/'|DELETE|특정 위험 삭제|✅|✅|
+|'alarm-types/'|GET|전체 알람 유형 목록 조회|✅||
+|'alarm-types/'|POST|새로운 알람 유형 생성|✅||✅|
+|'alarm-types/<int:pk>/'|GET|특정 알람 유형 조회|✅||
+|'alarm-types/<int:pk>/'|PUT|특정 알람 유형 수정|✅||✅|
+|'alarm-types/<int:pk>/'|PATCH|특정 알람 유형 부분 수정|✅||✅|
+|'alarm-types/<int:pk>/'|DELETE|특정 알람 유형 삭제|✅||✅|
+|'receive-alarm-data/'|POST|알람 데이터 수신|||✅|
+<br>
+
+|app: chat|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|Admin 권한|
+|:-|:-|:-|:-:|:-:|:-:|
+|'rooms/'|GET|전체 채팅방 목록 조회|✅|||
+|'rooms/'|POST|새로운 채팅방 생성|✅|||
+|'rooms/<int:pk>/'|GET|특정 채팅방 조회|✅|||
+|'rooms/<int:pk>/'|PUT|특정 채팅방 수정|✅|✅||
+|'rooms/<int:pk>/'|PATCH|특정 채팅방 부분 수정|✅|✅||
+|'rooms/<int:pk>/'|DELETE|특정 채팅방 삭제|✅|✅||
+|'rooms/<int:room_pk>/messages/'|GET|특정 채팅방 메시지 목록 조회|✅|||
+|'rooms/<int:room_pk>/messages/'|POST|특정 채팅방에 새로운 메시지 생성|✅|||
+|'rooms/<int:room_pk>/messages/<int:pk>/'|GET|특정 채팅방의 특정 메시지 조회|✅|||
+|'rooms/<int:room_pk>/messages/<int:pk>/'|PUT|특정 채팅방의 특정 메시지 수정|✅|✅||
+|'rooms/<int:room_pk>/messages/<int:pk>/'|PATCH|특정 채팅방의 특정 메시지 부분 수정|✅|✅||
+|'rooms/<int:room_pk>/messages/<int:pk>/'|DELETE|특정 채팅방의 특정 메시지 삭제|✅|✅||
+<br>
+
+|app: media|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|Admin 권한|
+|:-|:-|:-|:-:|:-:|:-:|
+|'files/'|GET|전체 미디어 파일 목록 조회|✅|||
+|'files/'|POST|새로운 미디어 파일 업로드|✅|||
+|'files/<int:pk>/'|GET|특정 미디어 파일 조회|✅|||
+|'files/<int:pk>/'|PUT|특정 미디어 파일 수정|✅|✅||
+|'files/<int:pk>/'|PATCH|특정 미디어 파일 부분 수정|✅|✅||
+|'files/<int:pk>/'|DELETE|특정 미디어 파일 삭제|✅|✅||
+|'files/<int:pk>/predict/'|POST|특정 미디어 파일 예측|✅|||
+<br>
+
+|app: notice|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|Admin 권한|
+|:-|:-|:-|:-:|:-:|:-:|
+|''|GET|전체 공지사항 목록 조회||||
+|''|POST|새로운 공지사항 생성|||✅|
+|'<int:pk>/'|GET|특정 공지사항 조회||||
+|'<int:pk>/'|PUT|특정 공지사항 수정|||✅|
+|'<int:pk>/'|PATCH|특정 공지사항 부분 수정|||✅|
+|'<int:pk>/'|DELETE|특정 공지사항 삭제|||✅|
+<br>
+
+
 ## 진행 상황
 
 저희 팀은 현재까지 다음과 같은 작업을 진행했습니다:
