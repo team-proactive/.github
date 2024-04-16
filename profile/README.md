@@ -143,6 +143,10 @@ Safe Eye 프로젝트는 다음과 같은 주요 기능을 제공할 예정입�
    - 각 사용자의 상태에 따라 알람을 분류합니다.
 
 
+## 와이어프레임
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWoaSR0gNr7CKk2c2UcJxz9%2F%25EC%2599%2580%25EC%259D%25B4%25EC%2596%25B4%25ED%2594%2584%25EB%25A0%2588%25EC%259E%2584%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DyZqiMjXRok0nrD2K-1" allowfullscreen></iframe>
+
+
 ## 데이터베이스 모델링(ER Diagram)
 ![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
 - 커스텀 사용자 관련 테이블
