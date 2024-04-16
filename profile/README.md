@@ -144,13 +144,12 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 데이터 처리 및 분석<br>
 <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
 <img src="https://img.shields.io/badge/scipy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white">
-<img src="https://img.shields.io/badge/scikit-image-372213?style=for-the-badge&logo=scikit-image&logoColor=white">
 
 
 컴퓨터 비전 및 이미지 처리<br>
-<img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">  <img src="https://img.shields.io/badge/anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white">
-<img src="https://img.shields.io/badge/CUDA-4285F4?style=for-the-badge&logo=CUDA&logoColor=white">
-<img src="https://img.shields.io/badge/slowfastModel-E60000?style=for-the-badge&logo=slowfastModel&logoColor=white">
+<img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">  <img src="https://img.shields.io/badge/CUDA-4285F4?style=for-the-badge&logo=CUDA&logoColor=white">
+<img src="https://img.shields.io/badge/conda-44A833?style=for-the-badge&logo=conda&logoColor=white">
+<img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
 
 ## 데이터베이스 모델링(ER Diagram)
 ![alt text](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fa2c403b4d3b140178ee7e0127531b31f)
