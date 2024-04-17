@@ -383,6 +383,16 @@ Black의 기본 설정을 그대로 사용합니다.
 ### [커밋 메시지 컨벤션](https://github.com/team-proactive/safe-eye/wiki/%EA%B9%83-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EC%BB%A4%EB%B0%8B-%EA%B0%80%EC%9D%B4%EB%93%9C)
 커밋 메시지는 다음과 같은 형식을 따릅니다.
 
+✨ Feat: 새로운 기능 추가
+🐛 Fix: 버그 수정
+📚 Docs: 문서 변경
+🎨 Style: 코드 스타일 변경 (코드 동작에 영향을 주지 않는 변경사항)
+♻️ Refactor: 코드 리팩토링
+✅ Test: 테스트 코드 추가 또는 수정
+🔧 Chore: 빌드 관련 파일 수정, 패키지 매니저 설정 등
+
+커밋 제목은 기능을 설명할 수 있게 간결하게 작성합니다.
+
 ### 기타 참고하실 team Proactive wiki 레퍼런스들
 
 [VSC 익스텐션 동기화 가이드](https://github.com/team-proactive/safe-eye/wiki/VSC-%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98-%EB%8F%99%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C)
@@ -398,16 +408,6 @@ Black의 기본 설정을 그대로 사용합니다.
 [컨벤션 가이드 Overview](https://github.com/team-proactive/safe-eye/wiki/%EC%BB%A8%EB%B2%A4%EC%85%98-%EA%B0%80%EC%9D%B4%EB%93%9C-Overview)
 
 [풀 리퀘스트 가이드](https://github.com/team-proactive/safe-eye/wiki/%ED%92%80-%EB%A6%AC%ED%80%98%EC%8A%A4%ED%8A%B8-%EA%B0%80%EC%9D%B4%EB%93%9C)
-
-✨ Feat: 새로운 기능 추가
-🐛 Fix: 버그 수정
-📚 Docs: 문서 변경
-🎨 Style: 코드 스타일 변경 (코드 동작에 영향을 주지 않는 변경사항)
-♻️ Refactor: 코드 리팩토링
-✅ Test: 테스트 코드 추가 또는 수정
-🔧 Chore: 빌드 관련 파일 수정, 패키지 매니저 설정 등
-
-커밋 제목은 기능을 설명할 수 있게 간결하게 작성합니다.
 
 ## 트러블 슈팅
 
