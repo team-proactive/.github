@@ -384,12 +384,19 @@ Black의 기본 설정을 그대로 사용합니다.
 커밋 메시지는 다음과 같은 형식을 따릅니다.
 
 ### 기타 참고하실 team Proactive wiki 레퍼런스들
+
 [VSC 익스텐션 동기화 가이드](https://github.com/team-proactive/safe-eye/wiki/VSC-%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98-%EB%8F%99%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C)
+
 [깃 관리 및 커밋 가이드](https://github.com/team-proactive/safe-eye/wiki/%EA%B9%83-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EC%BB%A4%EB%B0%8B-%EA%B0%80%EC%9D%B4%EB%93%9C)
+
 [브랜치 전략 가이드](https://github.com/team-proactive/safe-eye/wiki/%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5-%EA%B0%80%EC%9D%B4%EB%93%9C)
+
 [사람행동 영상 데이터 정보 간단 가이드](https://github.com/team-proactive/safe-eye/wiki/%EC%82%AC%EB%9E%8C%ED%96%89%EB%8F%99-%EC%98%81%EC%83%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%95%EB%B3%B4-%EA%B0%84%EB%8B%A8-%EA%B0%80%EC%9D%B4%EB%93%9C)
+
 [이슈 가이드](https://github.com/team-proactive/safe-eye/wiki/%EC%9D%B4%EC%8A%88-%EA%B0%80%EC%9D%B4%EB%93%9C)
+
 [컨벤션 가이드 Overview](https://github.com/team-proactive/safe-eye/wiki/%EC%BB%A8%EB%B2%A4%EC%85%98-%EA%B0%80%EC%9D%B4%EB%93%9C-Overview)
+
 [풀 리퀘스트 가이드](https://github.com/team-proactive/safe-eye/wiki/%ED%92%80-%EB%A6%AC%ED%80%98%EC%8A%A4%ED%8A%B8-%EA%B0%80%EC%9D%B4%EB%93%9C)
 
 ✨ Feat: 새로운 기능 추가
