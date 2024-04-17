@@ -94,9 +94,9 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 본 프로젝트의 소스 코드는 [라이센스 이름] 하에 공개되어 있습니다. 자세한 내용은 LICENSE 파일을 참조하시기 바랍니다.
 
 ## 기여
-<div class="margin: auto;">
+
 ![](https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fbab652660e554f7e9f2885037ac87da5)
-</div>
+
 
 ## 팀 소개
 
