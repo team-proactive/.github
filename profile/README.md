@@ -61,8 +61,7 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 <img src="https://img.shields.io/badge/conda-44A833?style=for-the-badge&logo=conda&logoColor=white">
 <img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
 
-## 시스템 아키텍처(오늘 배포되는것 까지만 만들어서 업데이트 예정)
-[시스템 아키텍처 다이어그램 이미지]
+## 시스템 아키텍처
 
 1. 사용자가 웹 애플리케이션을 통해 비디오 파일을 업로드합니다.
 2. 업로드된 비디오 파일은 Amazon S3 스토리지에 저장됩니다.
@@ -100,12 +99,14 @@ Safe Eye 프로젝트는 다음과 같은 기술 스택을 활용하여 개발�
 
 ## 팀 소개
 
+아래와 같이 그림의 크기를 통일시켰습니다. 사진의 가로, 세로 크기를 모두 150px로 조정하고, object-fit 속성을 cover로 설정하여 사진이 일정한 크기로 잘리도록 했습니다.
+
+
 | 이혜림(팀장) | 이규성 | 전지용 | 정진영 | 박경민 |
 | :---: | :---: | :---: | :---: | :---: |
-| <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2F7baaf7f18e1c4f2a951cd0d7f1543f37" style="width:200px min-width: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Feccac9ef755b40f3b864649e853f0aef" style="min-width: 170px; width: 170px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fef610161c92e42148bc9d5fe85e92951" style="min-width: 170px; width: 170px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fc24db93543b64f16b3234738fbfdcb4d" style="min-width: 170px; width: 170px; height: 200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2F84a7b4f5853a4f50a31e655aa3d5ab7c" style=" min-width: 170px; width: 170px; height: 200px; object-fit: cover;"> |
-| <a href="https://github.com/matty255"> 🌱 HY. Lee | <a href="https://github.com/rkawkclzls"> 🌱 rkawkclzls | <a href="https://github.com/mkdirlife"> 🌱 mkdirlife | <a href="https://github.com/najasinis"> 🌱 najasinis | <a href="https://github.com/Masterdual"> 🌱 Masterdual |
-| 프로젝트의 아키텍처를 설계하고, 기획 단계에서 요구사항을 명확히 정의하며, 프론트엔드 개발을 담당 했습니다. | AI 모델의 출력값(이미지)을 저장하고 관리하는 미디어 앱을 작성하여 분석 결과를 효과적으로 활용할 수 있도록 했습니다. | utils 앱 개발을 담당하고 있습니다. 다른 애플리케이션에서 공통적으로 사용할 수 있는 기능을 제공했습니다. | accounts 앱 및 chat 앱 개발을 담당하고 있으며, 모델링을 분담하고 있습니다. 더불어 사용자 인증과 관련된 기능들(정보 관리, 권한 부여 등), 채팅방 생성 기능, 실시간 채팅 기능들을 구현했습니다. | alarm 앱 개발을 담당했습니다. 적절한 경고 메시지를 커스텀하고, DB에 저장할 수 있도록 했습니다. |
-
+| <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2F7baaf7f18e1c4f2a951cd0d7f1543f37" style="min-width: 150px; width: 150px; max-width:150px; height:200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Feccac9ef755b40f3b864649e853f0aef" style="min-width: 150px; width: 150px; max-width:150px;  height:200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fef610161c92e42148bc9d5fe85e92951" style="min-width: 150px; width: 150px; max-width:150px;  height:200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2Fc24db93543b64f16b3234738fbfdcb4d" style="min-width: 150px; width: 150px; max-width:150px; height:200px; object-fit: cover;"> | <img src="https://cdn.builder.io/api/v1/image/assets%2F253795ae855443f2bcf20ffa08f40a29%2F84a7b4f5853a4f50a31e655aa3d5ab7c" style="min-width: 150px; width: 150px; max-width:150px;  height:200px; object-fit: cover;"> |
+| 🌱 HY. Lee | 🌱 rkawkclzls | 🌱 mkdirlife | 🌱 najasinis | 🌱 Masterdual |
+| 프로젝트의 아키텍처를 설계하고, 기획 단계에서 요구사항을 명확히 정의하며, 프론트엔드 개발을 담당 했습니다. | AI 모델의 출력값(이미지)을 저장하고 관리하는 미디어 앱을 작성하여 분석 결과를 효과적으로 활용할 수 있도록 했습니다. | utils 앱 개발을 담당하고 있습니다. 다른 애플리케이션에서 공통적으로 사용할 수 있는 기능을 제공했습니다. | accounts 앱 및 chat 앱 개발을 담당하고 있으며, 모델링을 분담하고 있습니다. 더불어 사용자 인증과 관련된 기능들(정보 관리, 권한 부여 등), 채팅방 생성 기능, 실시간 채팅 기능들을 구현했습니다. | 고객지원 앱을 만들고 적절한 경고 메시지를 커스텀하고, DB에 저장할 수 있도록 했습니다. |
 
 
 ## 주요 기능^
@@ -365,7 +366,7 @@ Safe Eye 프로젝트는 다음과 같은 주요 기능을 제공할 예정입�
 
 이 프로젝트에서는 일관되고 가독성 높은 코드를 유지하기 위해 다음과 같은 코드 스타일 가이드와 표준을 따릅니다.
 
-### [코드 스타일 가이드](https://github.com/team-proactive/safe-eye/wiki/%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5-%EA%B0%80%EC%9D%B4%EB%93%9C)
+### 코드 스타일[코드 스타일 가이드](https://github.com/team-proactive/safe-eye/wiki/%EC%BB%A8%EB%B2%A4%EC%85%98-%EA%B0%80%EC%9D%B4%EB%93%9C-Overview)
 PEP 8을 기반으로 한 파이썬 코드 스타일 가이드를 준수합니다.
 들여쓰기는 공백 4칸을 사용합니다.
 변수와 함수 이름은 스네이크 케이스를 사용합니다.
@@ -375,12 +376,12 @@ PEP 8을 기반으로 한 파이썬 코드 스타일 가이드를 준수합니�
 연산자 앞뒤로 공백을 사용합니다.
 함수와 클래스 사이에는 두 줄의 공백을 사용합니다.
 
-### [코드 포매팅](https://github.com/team-proactive/safe-eye/wiki/VSC-%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98-%EB%8F%99%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C)
+### 코드 포매팅
 Black 포매터를 사용하여 코드 스타일을 자동으로 통일합니다.
 Black의 기본 설정을 그대로 사용합니다.
 에디터에서 저장 시 자동으로 포매팅되도록 설정하는 것을 권장합니다.
 
-### [커밋 메시지 컨벤션](https://github.com/team-proactive/safe-eye/wiki/%EA%B9%83-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EC%BB%A4%EB%B0%8B-%EA%B0%80%EC%9D%B4%EB%93%9C)
+### 커밋 메시지 컨벤션
 커밋 메시지는 다음과 같은 형식을 따릅니다.
 
 ✨ Feat: 새로운 기능 추가
@@ -392,22 +393,6 @@ Black의 기본 설정을 그대로 사용합니다.
 🔧 Chore: 빌드 관련 파일 수정, 패키지 매니저 설정 등
 
 커밋 제목은 기능을 설명할 수 있게 간결하게 작성합니다.
-
-### 기타 참고하실 team Proactive wiki 레퍼런스들
-
-[VSC 익스텐션 동기화 가이드](https://github.com/team-proactive/safe-eye/wiki/VSC-%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98-%EB%8F%99%EA%B8%B0%ED%99%94-%EA%B0%80%EC%9D%B4%EB%93%9C)
-
-[깃 관리 및 커밋 가이드](https://github.com/team-proactive/safe-eye/wiki/%EA%B9%83-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EC%BB%A4%EB%B0%8B-%EA%B0%80%EC%9D%B4%EB%93%9C)
-
-[브랜치 전략 가이드](https://github.com/team-proactive/safe-eye/wiki/%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5-%EA%B0%80%EC%9D%B4%EB%93%9C)
-
-[사람행동 영상 데이터 정보 간단 가이드](https://github.com/team-proactive/safe-eye/wiki/%EC%82%AC%EB%9E%8C%ED%96%89%EB%8F%99-%EC%98%81%EC%83%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%95%EB%B3%B4-%EA%B0%84%EB%8B%A8-%EA%B0%80%EC%9D%B4%EB%93%9C)
-
-[이슈 가이드](https://github.com/team-proactive/safe-eye/wiki/%EC%9D%B4%EC%8A%88-%EA%B0%80%EC%9D%B4%EB%93%9C)
-
-[컨벤션 가이드 Overview](https://github.com/team-proactive/safe-eye/wiki/%EC%BB%A8%EB%B2%A4%EC%85%98-%EA%B0%80%EC%9D%B4%EB%93%9C-Overview)
-
-[풀 리퀘스트 가이드](https://github.com/team-proactive/safe-eye/wiki/%ED%92%80-%EB%A6%AC%ED%80%98%EC%8A%A4%ED%8A%B8-%EA%B0%80%EC%9D%B4%EB%93%9C)
 
 ## 트러블 슈팅
 
